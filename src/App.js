@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   Container,
   Form,
-  InputGroup,
-  FormControl,
   Button,
 } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
@@ -46,12 +44,23 @@ const App = () => {
   }, [symbol, accountSize, riskPercentage, stopLossPips]);
 
   const calculateLotSize = () => {
-    const pipValue = pipValues[symbol];
-    const calculatedLotSize =
-      (parseFloat(accountSize) * (parseFloat(riskPercentage) / 100)) /
-      (parseFloat(stopLossPips) * pipValue);
-    setLotSize(calculatedLotSize.toFixed(2));
-    setAmtRisk(parseFloat(accountSize) * (parseFloat(riskPercentage)) / 100)
+    
+    if(riskPercentage > 100){
+      setLotSize("Fuck You")
+      setAmtRisk("Go TO casino")
+      alert("Bro Fuck off!!! Know you limit😂")
+    }else if(riskPercentage > 50 &&  riskPercentage <= 100){
+      setAmtRisk("Hey Gambler")
+      setLotSize("Contact me for Risk Mgnt")
+      alert("Hello Gambler😂")
+    }else{
+      const pipValue = pipValues[symbol];
+      const calculatedLotSize =
+        (parseFloat(accountSize) * (parseFloat(riskPercentage) / 100)) /
+        (parseFloat(stopLossPips) * pipValue);
+      setLotSize(calculatedLotSize.toFixed(2));
+      setAmtRisk(parseFloat(accountSize) * (parseFloat(riskPercentage)) / 100)
+    }
   };
 
   return (
