@@ -1,13 +1,20 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0; /* Remove default margin to ensure the image covers the entire viewport */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    position: relative;
+    /* padding-top: 100px; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::before {
+    content: '';
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg');
+    background-size: cover; /* or background-size: contain; depending on your preference */
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Adjust the value (5px) to control the amount of blur */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Ensure the pseudo-element is behind the content of the body */
 }
