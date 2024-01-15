@@ -33,7 +33,8 @@ const App = () => {
     "NZD/USD": 10,
     "EUR/CHF": 11.73,
     "EUR/JPY": 6.9,
-    NAS100: 10,
+    "NAS100": 10,
+    "XAUUSD": 1
   };
 
   useEffect(() => {
