@@ -16,12 +16,12 @@ h2{
 
 .glass {
   justify-content: center;
-  background: rgba(255, 255, 255, 0.43);
+  background: rgba(20, 17, 17, 0.43);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.2px);
   -webkit-backdrop-filter: blur(8.2px);
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid rgb(0, 0, 0);
   margin-top: 55%;
   padding: 50px;
 }
@@ -74,7 +74,7 @@ h2{
 @media (max-width: 600px) {
   .glass {
     grid-template-columns: 1fr;
-    margin-top: 850px
+    margin-top: 850px;
   }
 }
 
@@ -85,7 +85,7 @@ h2{
 }
 
 .box{
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   text-align: center;
   margin: 5px 0;

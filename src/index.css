@@ -1,8 +1,11 @@
 body {
     margin: 0; /* Remove default margin to ensure the image covers the entire viewport */
-    height: 100vh; /* Set height to 100% of the viewport height */
+    height: 100vh;
     position: relative;
+/* padding-bottom: 400px !important; */
     /* padding-top: 100px; */
+    color: white !important;
+    border-color: white !important;
 }
 
 body::before {
