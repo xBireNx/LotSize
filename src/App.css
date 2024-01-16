@@ -74,6 +74,7 @@ h2{
 @media (max-width: 600px) {
   .glass {
     grid-template-columns: 1fr;
+    margin-top: 850px
   }
 }
 
