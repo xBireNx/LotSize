@@ -7,7 +7,7 @@ body {
 
 body::before {
     content: '';
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg');
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/175/524/956/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg');
     background-size: cover; /* or background-size: contain; depending on your preference */
     background-repeat: no-repeat;
     filter: blur(8px); /* Adjust the value (5px) to control the amount of blur */
